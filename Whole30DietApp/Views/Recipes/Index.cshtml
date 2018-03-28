@@ -1,0 +1,207 @@
+﻿@model IEnumerable<Whole30DietApp.Models.Recipe>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageString)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Instructions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuickInstructions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Servings)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Source)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient9)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient10)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient11)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient12)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient13)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient14)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient15)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient16)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient17)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient18)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient19)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredient20)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImageString)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Instructions)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuickInstructions)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rating)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Servings)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Source)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient9)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient10)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient11)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient12)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient13)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient14)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient15)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient16)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient17)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient18)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient19)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredient20)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
