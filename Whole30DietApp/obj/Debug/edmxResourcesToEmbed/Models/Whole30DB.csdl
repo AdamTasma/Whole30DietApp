@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Whole30DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Ingredient">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Store" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ImageString" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Aisle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Recipe">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ImageString" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Instructions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="QuickInstructions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TotalTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Int32" />
+    <Property Name="Servings" Type="Int32" />
+    <Property Name="Source" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient9" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient10" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient11" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient12" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient13" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient14" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient15" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient16" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient17" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient18" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient19" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ingredient20" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="Whole30DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Ingredients" EntityType="Self.Ingredient" />
+    <EntitySet Name="Recipes" EntityType="Self.Recipe" />
+  </EntityContainer>
+</Schema>
