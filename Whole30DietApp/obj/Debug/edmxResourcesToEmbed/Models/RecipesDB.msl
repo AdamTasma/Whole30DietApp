@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Whole30RecipesDBStoreContainer" CdmEntityContainer="RecipesDB">
+    <EntitySetMapping Name="Recipes">
+      <EntityTypeMapping TypeName="Whole30RecipesDB.Recipe">
+        <MappingFragment StoreEntitySet="Recipes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="ImageString" ColumnName="ImageString" />
+          <ScalarProperty Name="Instructions" ColumnName="Instructions" />
+          <ScalarProperty Name="QuickInstructions" ColumnName="QuickInstructions" />
+          <ScalarProperty Name="PrepTime" ColumnName="PrepTime" />
+          <ScalarProperty Name="CookTime" ColumnName="CookTime" />
+          <ScalarProperty Name="TotalTime" ColumnName="TotalTime" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="Servings" ColumnName="Servings" />
+          <ScalarProperty Name="ServingSize" ColumnName="ServingSize" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Ingredient1" ColumnName="Ingredient1" />
+          <ScalarProperty Name="Ingredient2" ColumnName="Ingredient2" />
+          <ScalarProperty Name="Ingredient3" ColumnName="Ingredient3" />
+          <ScalarProperty Name="Ingredient4" ColumnName="Ingredient4" />
+          <ScalarProperty Name="Ingredient5" ColumnName="Ingredient5" />
+          <ScalarProperty Name="Ingredient6" ColumnName="Ingredient6" />
+          <ScalarProperty Name="Ingredient7" ColumnName="Ingredient7" />
+          <ScalarProperty Name="Ingredient8" ColumnName="Ingredient8" />
+          <ScalarProperty Name="Ingredient9" ColumnName="Ingredient9" />
+          <ScalarProperty Name="Ingredient10" ColumnName="Ingredient10" />
+          <ScalarProperty Name="Ingredient11" ColumnName="Ingredient11" />
+          <ScalarProperty Name="Ingredient12" ColumnName="Ingredient12" />
+          <ScalarProperty Name="Ingredient13" ColumnName="Ingredient13" />
+          <ScalarProperty Name="Ingredient14" ColumnName="Ingredient14" />
+          <ScalarProperty Name="Ingredient15" ColumnName="Ingredient15" />
+          <ScalarProperty Name="Ingredient16" ColumnName="Ingredient16" />
+          <ScalarProperty Name="Ingredient17" ColumnName="Ingredient17" />
+          <ScalarProperty Name="Ingredient18" ColumnName="Ingredient18" />
+          <ScalarProperty Name="Ingredient19" ColumnName="Ingredient19" />
+          <ScalarProperty Name="Ingredient20" ColumnName="Ingredient20" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

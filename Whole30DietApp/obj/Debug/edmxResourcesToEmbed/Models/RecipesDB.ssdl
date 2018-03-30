@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Whole30RecipesDB.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Recipes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Image" Type="image" />
+    <Property Name="ImageString" Type="nvarchar(max)" />
+    <Property Name="Instructions" Type="nvarchar(max)" />
+    <Property Name="QuickInstructions" Type="nvarchar(max)" />
+    <Property Name="PrepTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="CookTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="TotalTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="Rating" Type="int" />
+    <Property Name="Servings" Type="int" />
+    <Property Name="ServingSize" Type="nvarchar" MaxLength="50" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+    <Property Name="Source" Type="nvarchar(max)" />
+    <Property Name="Ingredient1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient3" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient4" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient5" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient6" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient7" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient8" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient9" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient10" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient11" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient12" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient13" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient14" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient15" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient16" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient17" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient18" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient19" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ingredient20" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="Whole30RecipesDBStoreContainer">
+    <EntitySet Name="Recipes" EntityType="Self.Recipes" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

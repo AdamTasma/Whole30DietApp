@@ -206,7 +206,22 @@
     </Compile>
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Recipe.cs">
-      <DependentUpon>Whole30DB.tt</DependentUpon>
+      <DependentUpon>RecipesDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RecipesDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecipesDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RecipesDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecipesDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RecipesDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecipesDB.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Whole30DB.Context.cs">
       <AutoGen>True</AutoGen>
@@ -233,6 +248,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\RecipesDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RecipesDB.edmx</DependentUpon>
+      <LastGenOutput>RecipesDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\RecipesDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RecipesDB.edmx</DependentUpon>
+      <LastGenOutput>RecipesDB.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\Whole30DB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Whole30DB.edmx</DependentUpon>
@@ -254,6 +279,13 @@
     </EntityDeploy>
     <Content Include="Models\Whole30DB.edmx.diagram">
       <DependentUpon>Whole30DB.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\RecipesDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RecipesDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\RecipesDB.edmx.diagram">
+      <DependentUpon>RecipesDB.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

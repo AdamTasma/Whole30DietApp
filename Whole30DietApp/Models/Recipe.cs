@@ -21,9 +21,14 @@ namespace Whole30DietApp.Models
         public string ImageString { get; set; }
         public string Instructions { get; set; }
         public string QuickInstructions { get; set; }
+        public string PrepTime { get; set; }
+        public string CookTime { get; set; }
         public string TotalTime { get; set; }
         public Nullable<int> Rating { get; set; }
         public Nullable<int> Servings { get; set; }
+        public string ServingSize { get; set; }
+        public string Type { get; set; }
+        public string Notes { get; set; }
         public string Source { get; set; }
         public string Ingredient1 { get; set; }
         public string Ingredient2 { get; set; }

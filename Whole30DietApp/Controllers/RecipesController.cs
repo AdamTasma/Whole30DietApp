@@ -12,7 +12,7 @@ namespace Whole30DietApp.Controllers
 {
     public class RecipesController : Controller
     {
-        private Whole30DBEntities db = new Whole30DBEntities();
+        private RecipesDB db = new RecipesDB();
 
         // GET: Recipes
         public ActionResult Index()
@@ -46,7 +46,7 @@ namespace Whole30DietApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name,Description,Image,ImageString,Instructions,QuickInstructions,TotalTime,Rating,Servings,Source,Ingredient1,Ingredient2,Ingredient3,Ingredient4,Ingredient5,Ingredient6,Ingredient7,Ingredient8,Ingredient9,Ingredient10,Ingredient11,Ingredient12,Ingredient13,Ingredient14,Ingredient15,Ingredient16,Ingredient17,Ingredient18,Ingredient19,Ingredient20")] Recipe recipe)
+        public ActionResult Create([Bind(Include = "ID,Name,Description,Image,ImageString,Instructions,QuickInstructions,PrepTime,CookTime,TotalTime,Rating,Servings,ServingSize,Type,Notes,Source,Ingredient1,Ingredient2,Ingredient3,Ingredient4,Ingredient5,Ingredient6,Ingredient7,Ingredient8,Ingredient9,Ingredient10,Ingredient11,Ingredient12,Ingredient13,Ingredient14,Ingredient15,Ingredient16,Ingredient17,Ingredient18,Ingredient19,Ingredient20")] Recipe recipe)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace Whole30DietApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Name,Description,Image,ImageString,Instructions,QuickInstructions,TotalTime,Rating,Servings,Source,Ingredient1,Ingredient2,Ingredient3,Ingredient4,Ingredient5,Ingredient6,Ingredient7,Ingredient8,Ingredient9,Ingredient10,Ingredient11,Ingredient12,Ingredient13,Ingredient14,Ingredient15,Ingredient16,Ingredient17,Ingredient18,Ingredient19,Ingredient20")] Recipe recipe)
+        public ActionResult Edit([Bind(Include = "ID,Name,Description,Image,ImageString,Instructions,QuickInstructions,PrepTime,CookTime,TotalTime,Rating,Servings,ServingSize,Type,Notes,Source,Ingredient1,Ingredient2,Ingredient3,Ingredient4,Ingredient5,Ingredient6,Ingredient7,Ingredient8,Ingredient9,Ingredient10,Ingredient11,Ingredient12,Ingredient13,Ingredient14,Ingredient15,Ingredient16,Ingredient17,Ingredient18,Ingredient19,Ingredient20")] Recipe recipe)
         {
             if (ModelState.IsValid)
             {
